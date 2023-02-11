@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.sidebar
+{
+    background: rgb(73, 33, 2,0.6);
+    padding-top: 10px;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: right;
+
+}
+.sidebar .portfolio_image{
+    width: 140px;
+    height: 200px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+
+}
+.sidebar h4{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.sidebar a{
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+
+
+}
+.sidebar a:hover{
+    background: brown;
+
+}
+.front{
+    background-image: url(https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/317259780_1203438210384185_8590408884233391855_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=19026a&_nc_ohc=yREoltX22rsAX_CxSPK&_nc_ht=scontent.fktm8-1.fna&oh=00_AfAYzaqEbkWQqfPzWpKW3qrZ1jOkUNuC0GBJWTOcfR3dPA&oe=63ECA902);
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+
+}
+.front h1{
+    color: #fff;
+    font-size:40px;
+    padding-left: 50px;
+    padding-top: 90px;
+}
+.front h2{
+    color: #fff;
+    font-size:40px;
+    padding-left: 50px;
+    padding-top: px;
+
+}
+.front h3{
+    font-size:40px;
+    padding-left: 50px;
+    padding-top: 10px;
+
+}
+.front h3 span{
+    color: aqua;
+}
+
+@media screen and (max-width:728px ){
+    .sidebar{
+        width: 190px;
+        height: 100vh;
+
+    }
+    .sidebar a{
+        font-size: 17px;
+
+    }
+    .sidebar .portfolio_image{
+        width: 100px;
+        height: 150px;
+
+    }
+    .front{
+    width: 80%;
+
+        
+
+    }
+    
+}
+
+/*---------------about---------*/
+
+img{
+    height:100vh;
+    width: 100%;
+
+}
+.main{
+    display:flex;
+    background-color:black;
+
+}
+.main .left{
+    height:100vh;
+    width:100vh;
+}
+
+
+
+.left h1{
+    margin: 30px;
+    font-size: 60px;
+    color: #fff;
+    
+}
+    
+.left h2{
+    font-size:25px;
+    margin-top:70px;
+    padding:20;
+    margin: 20px;
+    color: #fff;
+
+}
+.left h2 span{
+    color: cyan;
+}
+
+.tab_titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight:500 ;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5;
+
+
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-contents ul li{
+
+    list-style: none;
+    margin: 10px 0;
+    color: #fff;
+}
+.tab-contents ul li span{
+    color:aqua;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+
+/*---------Education--------*/
+
+.front2{
+    background-color:black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+    
+
+.front2 .left{
+    display: block;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.front2 .secondary .left1 .kj_pic{
+    height: 250px;
+    width: 250px;
+}
+.front2 .plus_two .left2 .lawr_pic{
+    height: 250px;
+    width: 250px;
+
+}
+.front2 .bachlor .left3 .herald_pic{
+    height: 250px;
+    width: 250px;
+
+}
+.edu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.secondary .right1 h1{
+    color:rgba(240, 244, 245, 0.918);
+    width: 50%;
+    
+}
+
+.plus_two .right2 h2{
+    color:rgba(238, 241, 243, 0.874);
+    width: 50%;
+
+}
+.bachlor .right3 h3{
+    color:rgb(235, 240, 243);
+    width: 50%;
+}
+
+
+/*-----contact--*/
+
+.contact-left{
+    flex-basis: 35%;
+    font-size: 23px;
+
+}
+.contact-right{
+    flex-basis: 60%;
+
+}
+.contact-left p{
+    margin-top: 30px;
+    color: #fff;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right:15px ;
+    font-size: 25px;
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform(0.5s);
+
+
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translate(-5px);
+
+}
+.btn .btn2{
+    display: inline-block;
+    background-color: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+/*-----skill--------------*/
+#skill{
+    height:100vh;
+    width:100%;
+    background-color: rgb(114, 101, 101);
+
+}
+#skills li{
+    font-size:30px;
+    margin-top:20px;
+}
+#skills {
+    z-index:1;
+    background-color: black;
+    color: white;
+    width:80%;
+    height:auto; 
+
+  
+}
+.skills_list img{
+width: 250px;
+height: 250px;
+}
+.skills_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.main1{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+#education .main{
+    font-size:10px;
+}
+@media screen  and (max-width:728px){
+    #skills{
+    width:50%;
+    }
+    .main{
+        font-size: 10px;
+    }
+}
